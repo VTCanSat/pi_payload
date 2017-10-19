@@ -30,3 +30,10 @@ On startup, logging will begin after about 60 seconds.
 Other Notes:
 I measured that the lens of the camera should be extended about 2.85 cm from the edge of the pi's enclosure. This is very rough, but it will increase the likelihood that the images are in focus.
 
+In order to add the startup script, run 
+
+sudo crontab -e
+
+And past this code:
+
+@reboot sh /home/pi/log_launch.sh
